@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nidhi Parthasarathy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        header h1 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            font-size: 1.5em;
+            margin: 0;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            margin: 0;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 400;
+            font-size: 1em;
+        }
+
+        header nav ul li a:hover {
+            color: #0073e6;
+        }
+
+        main {
+            padding: 120px 20px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .profile {
+            text-align: center;
+            flex: 1;
+            min-width: 250px;
+            margin-right: 40px;
+            padding-top: 50px; /* Added padding to move content down */
+        }
+
+        .profile * {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .profile-pic {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto 20px;
+            animation: fadeIn 2s;
+        }
+
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .social-icons img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .about-me {
+            flex: 2;
+            min-width: 300px;
+        }
+
+        .about-me * {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .about-me h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .about-me p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #f4f4f4;
+            color: #333;
+            margin-top: 40px;
+            font-size: 1.2em;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Nidhi Parthasarathy</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="work-experience.html#experience">Work Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#dance">Dance</a></li>
+					<li><a href="#volunteering">Volunteering</a></li>
+                    <li><a href="#awards">Awards</a></li>
+                    <li><a href="#cv">CV</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="profile">
+                <img src="images/profile.jpg" alt="Profile Picture" class="profile-pic">
+                <h2>Nidhi Parthasarathy</h2>
+                <p>High School Student - Avid coder, dancer</p>
+                <div class="social-icons">
+                    <a href="mailto:nidhi.parthasarathy@gmail.com"><img src="images/email.png" alt="Email"></a>
+                    <a href="https://github.com/nidhi-partha" target="_blank" rel="noopener"><img src="images/github.png" alt="GitHub"></a>
+                    <a href="https://www.linkedin.com/in/nidhi-parthasarathy/" target="_blank" rel="noopener"><img src="images/linkedin.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+            <div class="about-me">
+                <h2>About Me</h2>
+                <p>Hi! My name is Nidhi! I am a freshman at Lynbrook High School in San Jose, California. I am passionate about computer science and AI, and am interested in developing applications to help people! </p>
+                <p>My recent works include researching the use of Ai with regenerative medicine and neural stem cells differentiation and the use of AI for HCI and education. Apart from research, I also dance and volunteer.</p>
+                <p>In the future, I want to pursue a degree in computer science towards a future career in research and teaching. Outside of coding, I am passionate about dance and service. But most of all, I love to spend time with my friends and family!</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Nidhi Parthasarathy. All rights reserved.</p>
+    </footer>
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
