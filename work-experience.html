@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Work Experience - Nidhi Parthasarathy</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
@@ -67,77 +67,58 @@
         .container {
             max-width: 1200px;
             margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
         }
 
         .timeline {
             position: relative;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .timeline::after {
-            content: '';
-            position: absolute;
-            width: 6px;
+            width: 2px;
             background-color: #0073e6;
-            top: 0;
-            bottom: 0;
-            left: 50%;
-            margin-left: -3px;
+            margin: 20px 0 20px 150px; /* Adjusted margin to move timeline to the left */
         }
 
         .timeline-item {
-            padding: 20px 40px;
             position: relative;
-            background-color: inherit;
-            width: 50%;
+            padding: 20px 0;
+            margin-left: -10px;
         }
 
-        .timeline-item::after {
+        .timeline-item::before {
             content: '';
             position: absolute;
-            width: 25px;
-            height: 25px;
-            right: -17px;
-            background-color: white;
-            border: 4px solid #0073e6;
-            top: 15px;
+            width: 10px;
+            height: 10px;
+            background-color: #0073e6;
+            border: 3px solid #fff;
             border-radius: 50%;
+            left: -18px;
+            top: 50%;
+            transform: translateY(-50%);
             z-index: 1;
         }
 
-        .timeline-item.left {
-            left: -4%;
+        .timeline-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: calc(100vw - 650px);
+            margin-left: 40px; /* Adjusted margin to align cards with the timeline */
         }
 
-        .timeline-item.right {
-            left: 50%;
+        .timeline-content h3 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500; /* Ensure bold font weight */
+            font-size: 1.5em; /* Increase the font size for better emphasis */
+            margin: 0 0 10px 0; /* Add margin for better spacing */
         }
 
-        .timeline-item.right::before {
-            content: " ";
-            height: 0;
-            position: absolute;
-            top: 22px;
-            width: 0;
-            z-index: 1;
-            right: 30px;
-            border: medium solid white;
-            border-width: 10px 0 10px 10px;
-            border-color: transparent transparent transparent white;
-        }
-
-        .timeline-item.left::before {
-            content: " ";
-            height: 0;
-            position: absolute;
-            top: 22px;
-            width: 0;
-            z-index: 1;
-            left: 30px;
-            border: medium solid white;
-            border-width: 10px 10px 10px 0;
-            border-color: transparent white transparent transparent;
+        h2 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600; /* Ensure bold font weight */
+            font-size: 2em; /* Increase font size for the title */
+            margin-bottom: 20px; /* Add margin for better spacing */
         }
 
         .content {
@@ -145,33 +126,23 @@
             background-color: white;
             position: relative;
             border-radius: 6px;
+            width: calc(100vw - 650px);
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         @media screen and (max-width: 600px) {
-            .timeline::after {
-                left: 31px;
+            .timeline {
+                width: 1px;
+                margin: 20px auto;
             }
 
-            .timeline-item {
-                width: 100%;
-                padding-left: 70px;
-                padding-right: 25px;
+            .timeline-content {
+                width: calc(100% - 20px);
+                margin: 10px auto;
             }
 
             .timeline-item::before {
-                left: 60px;
-                border: medium solid white;
-                border-width: 10px 10px 10px 0;
-                border-color: transparent white transparent transparent;
-            }
-
-            .timeline-item.left::after, .timeline-item.right::after {
-                left: 15px;
-            }
-
-            .timeline-item.right {
-                left: 0%;
+                left: -6px;
             }
         }
 
@@ -194,6 +165,8 @@
                 <ul>
                     <li><a href="home.html">Home</a></li>
                     <li><a href="work-experience.html">Work Experience</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="talks.html">Talks</a></li>
                     <li><a href="home.html#projects">Projects</a></li>
                     <li><a href="home.html#dance">Dance</a></li>
 					<li><a href="home.html#volunteering">Volunteering</a></li>
@@ -207,44 +180,52 @@
         <div class="container">
             <h2>Work Experience</h2>
             <div class="timeline">
-                <div class="timeline-item left">
-                    <div class="content">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Paid Research Intern</h3>
+                        <h4>HAI Ceras, <strong>Stanford</strong></h4>
+                        <p>June 2024 – Sep 2024 • Palo Alto, CA</p>
+                        <p>Researching AI-powered learning for journalism & civic engagement. </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
                         <h3>Research Intern</h3>
-                        <h4>Applications-driven Architecture Team, <strong>AMD Research</strong></h4>
-                        <p>May 2023 – Aug 2022 • Santa Clara, USA</p>
-                        <p>Designed thousands-scale GPU systems to improve trillion-parameter LLM training.</p>
+                        <h4>Lincoln Labs, <strong>MIT BWSI</strong></h4>
+                        <p>July 2023 – July 2023 • Boston, MA</p>
+                        <p>5 month online training + intense four week summer program. ML for several real-world clinical scenarios: hypothyroidism, sleep classification, mammogram analysis. Capstone <a href="https://stemcells.anvil.app/">project</a> on predicting stem cell differentiation.</p>
                     </div>
                 </div>
-                <div class="timeline-item right">
-                    <div class="content">
+                <div class="timeline-item">
+                    <div class="timeline-content">
                         <h3>Research Intern</h3>
-                        <h4>Advanced Memory Group, <strong>Micron</strong></h4>
-                        <p>May 2022 – Aug 2022 • Dallas, USA</p>
-                        <p>Designed memory systems for emerging memory and interconnect technologies.</p>
+                        <h4>AIMI, <strong>Stanford</strong></h4>
+                        <p>November 2022 – March 2023 • Palo ALto, CA</p>
+                        <p>First sophomore invited by program for full year research internship. Worked on a new ML educational outreach program for underserved communities. Developed curriculum & taught material, with research.  AIMI symposium, moderated AIMI webinars.</p>
                     </div>
                 </div>
-                <div class="timeline-item left">
-                    <div class="content">
-                        <h3>HPC GPU Advocate Intern</h3>
-                        <h4>Bootcamps and Hackathons Team, <strong>NVIDIA</strong></h4>
-                        <p>May 2021 – Aug 2021 • India</p>
-                        <p>Created open-source tutorials and tools for scalable multi-GPU HPC programming.</p>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Student Intern</h3>
+                        <h4><strong>ZeroUI</strong></h4>
+                        <p>June 2022 – Aug 2022, July 2023 • San Jose, CA</p>
+                        <p>Conversational AI tutor platform for self-learning in 3D-interactive sandboxes, virtual simulations to illustrate heart arrhythmias/cell membrane transport; content/curriculum for biology “computational STEM” module for Zdemy e-learning platform. Design/coding. Represented ZeroUI in demos/presentations (local congressman, Google keynote); CSTEM outreach for underprivileged students.</p>
                     </div>
                 </div>
-                <div class="timeline-item right">
-                    <div class="content">
-                        <h3>Architecture Research Intern</h3>
-                        <h4>Processor Architecture Research Lab, <strong>Intel Labs</strong></h4>
-                        <p>May 2020 – Oct 2020 • India</p>
-                        <p>Improved a non-inclusive cache hierarchy through fast-yet-accurate simulations.</p>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Program Participant</h3>
+                        <h4>HAI, <strong>Stanford</strong></h4>
+                        <p>June 2022 – July 2022 • Palo Alto, CA</p>
+                        <p>Immersive 3-week program on AI/ML. Capstone project: ML to analyze x-ray images to detect diseases. 17 <a href="https://nidhiparthasarathy.medium.com/my-summer-at-ai4all-f06eea5cdc2e">blog series</a> published on Medium.  Featured on Stanford HAI <a href="https://hai.stanford.edu/news/student-perspective-my-summer-ml-ai4all-stanford">blog</a>.</p>
                     </div>
                 </div>
-                <div class="timeline-item left">
-                    <div class="content">
-                        <h3>Systems Intern</h3>
-                        <h4>New York Office, <strong>IIT Kanpur</strong></h4>
-                        <p>May 2018 – Jul 2018 • India</p>
-                        <p>Deployed infrastructure tools with zero-downtime on multi-node Kubernetes cluster.</p>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Program Participant</h3>
+                        <h4><strong>BWSI Many Interesting Things</strong></h4>
+                        <p>April 2022 – June 2022 • Boston, MA</p>
+                        <p>Many Interesting Things for Aspiring Engineers: MIT’s entry-level technologies course adapted as an 8-week curriculum for high schoolers preceded by a 6 month online curriculum. Capstone project on ML/AI to analyze spread of Covid.</p>
                     </div>
                 </div>
             </div>
