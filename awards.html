@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Publications - Nidhi Parthasarathy</title>
+    <title>Awards - Nidhi Parthasarathy</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -77,11 +77,28 @@
         }
 
         .publication-item {
-            background-color: white;
-            padding: 20px;
-            border-radius: 6px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
+            background-color: transparent;
+            padding: 12px 0 12px 18px;
+            position: relative;
+            border-radius: 0;
+            box-shadow: none;
+            margin-bottom: 0;
+            border-bottom: 1px solid #eaeaea;
+        }
+
+        .publication-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 1.35em;
+            width: 8px;
+            height: 8px;
+            background-color: #0073e6;
+            border-radius: 50%;
+        }
+
+        .publication-item:last-child {
+            border-bottom: none;
         }
 
         .publication-item h3 {
@@ -122,9 +139,9 @@
 
         h2 {
             font-family: 'Poppins', sans-serif;
-            font-weight: 600; /* Ensure bold font weight */
-            font-size: 2em; /* Increase font size for the title */
-            margin-bottom: 20px; /* Add margin for better spacing */
+            font-weight: 600;
+            font-size: 2em;
+            margin-bottom: 20px;
         }
 
         footer {
@@ -157,25 +174,47 @@
     </header>
     <main>
         <div class="container">
-            <h2>Publications</h2>
+            <h2>Awards and Honors</h2>
             <div class="publications">
                 <div class="publication-item">
-                    <h4>Nov-Dec 2023 • <strong>IEEE 2023</strong></h4>
-                    <h3>Fifty years of ISCA: A data-driven retrospective</h3>
-                    <p>Matthew D. Sinclair, Parthasarathy Ranganathan, Gaurang Upasani, Adrian Sampson, David Patterson, Rutwik Jain, Nidhi Parthasarathy, Shaan Shah</p>
-                    <a href="https://ieeexplore.ieee.org/document/10315012" class="pdf-link">Paper</a>
+                    <h4>Krause Center for Innovation</h4>
+                    <h3>Panelist, AI &amp; Education Leadership Summit</h3>
+                    <p>Nidhi Parthasarathy</p>
                 </div>
                 <div class="publication-item">
-                    <h4>Nov 2023 • <strong>Arxiv</strong></h4>
-                    <h3>Predicting Neural Stem Cell Differentiation Using Deep Learning Models </h3>
-                    <p>Nidhi Parthasarathy, Chandra Suda, Anika Mittal, Ian Young Chen, Ananya Jalihal</p>
-                    <a href="https://arxiv.org/abs/2312.06665" class="pdf-link">Paper</a>
+                    <h4>2021, 2022, 2023</h4>
+                    <h3>NCWIT Aspirations in Computing National Winner (3×)</h3>
+                    <p>Top 10% nationally</p>
                 </div>
                 <div class="publication-item">
-                    <h4>July 2024 • To Appear in <strong>NextGen Research Institute</strong></h4>
-                    <h3>Application of Convolutional Neural Networks (CNNs) Reduces Radiological Diagnostic Errors in Classifying Pulmonary Diseases Based on Chest X-rays</h3>
-                    <p>Radha Munver, Nidhi Parthasarathy, Sanya Badhe</p>
-                    <a href="https://drive.google.com/file/d/1pJdBxTELC6ePNloUzkzyWLEg8oAMFrue/view?usp=sharing" class="pdf-link">Paper</a>
+                    <h4>2021, 2022, 2023</h4>
+                    <h3>Presidential Service Gold Award (3×)</h3>
+                    <p>Nidhi Parthasarathy</p>
+                </div>
+                <div class="publication-item">
+                    <h4>2023</h4>
+                    <h3>BEEP Entrepreneurship Funding — Winner</h3>
+                    <p>Nidhi Parthasarathy</p>
+                </div>
+                <div class="publication-item">
+                    <h4>2023 • 2021, 2022</h4>
+                    <h3>MIT BWSI Award; InSpritAI Ambassador</h3>
+                    <p>MIT BWSI Award (2023); InSpritAI Ambassador (2021, 2022)</p>
+                </div>
+                <div class="publication-item">
+                    <h4>2024</h4>
+                    <h3>National Merit Commended Scholar</h3>
+                    <p>Nidhi Parthasarathy</p>
+                </div>
+                <div class="publication-item">
+                    <h4>2022</h4>
+                    <h3>USA Computing Olympiad — Silver</h3>
+                    <p>Nidhi Parthasarathy</p>
+                </div>
+                <div class="publication-item">
+                    <h4>Dance USA</h4>
+                    <h3>1st place — regional winner</h3>
+                    <p>Bharatanatyam / dance</p>
                 </div>
             </div>
         </div>

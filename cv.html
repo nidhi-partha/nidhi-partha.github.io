@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Publications - Nidhi Parthasarathy</title>
+    <title>CV - Nidhi Parthasarathy</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -12,6 +12,7 @@
             background-color: #fff;
             color: #333;
             scroll-behavior: smooth;
+            font-family: 'Poppins', sans-serif;
         }
 
         header {
@@ -36,7 +37,6 @@
             font-size: 1.5em;
             margin: 0;
         }
-
 
         header nav ul {
             list-style: none;
@@ -68,63 +68,46 @@
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .publications {
-            width: 100%;
-        }
-
-        .publication-item {
-            background-color: white;
-            padding: 20px;
-            border-radius: 6px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-        }
-
-        .publication-item h3 {
-            font-family: 'Poppins', sans-serif;
-            font-weight: 500;
-            font-size: 1.2em;
-            margin: 0;
-        }
-
-        .publication-item h4 {
-            font-family: 'Roboto', sans-serif;
-            font-weight: 400;
-            font-size: 1em;
-            margin: 5px 0;
-            color: #555;
-        }
-
-        .publication-item p {
-            font-family: 'Roboto', sans-serif;
-            font-weight: 400;
-            font-size: 1em;
-            margin: 5px 0;
-            color: #555;
-        }
-
-        .publication-item .pdf-link {
-            display: inline-block;
-            padding: 5px 10px;
-            margin-top: 10px;
-            background-color: #0073e6;
-            color: white;
-            border-radius: 3px;
-            text-decoration: none;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 500;
-            font-size: 0.9em;
         }
 
         h2 {
             font-family: 'Poppins', sans-serif;
-            font-weight: 600; /* Ensure bold font weight */
-            font-size: 2em; /* Increase font size for the title */
-            margin-bottom: 20px; /* Add margin for better spacing */
+            font-weight: 600;
+            font-size: 2em;
+            margin: 0 0 10px 0;
+        }
+
+        .cv-actions {
+            margin: 10px 0 18px 0;
+        }
+
+        .cv-actions a {
+            display: inline-block;
+            padding: 8px 12px;
+            background-color: #0073e6;
+            color: #fff;
+            border-radius: 4px;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-size: 0.95em;
+        }
+
+        .cv-actions a:hover {
+            filter: brightness(0.95);
+        }
+
+        .pdf-frame {
+            width: 100%;
+            height: min(78vh, 900px);
+            border: 1px solid #eaeaea;
+            border-radius: 6px;
+        }
+
+        .cv-fallback {
+            font-family: 'Roboto', sans-serif;
+            color: #555;
+            margin-top: 12px;
         }
 
         footer {
@@ -157,27 +140,11 @@
     </header>
     <main>
         <div class="container">
-            <h2>Publications</h2>
-            <div class="publications">
-                <div class="publication-item">
-                    <h4>Nov-Dec 2023 • <strong>IEEE 2023</strong></h4>
-                    <h3>Fifty years of ISCA: A data-driven retrospective</h3>
-                    <p>Matthew D. Sinclair, Parthasarathy Ranganathan, Gaurang Upasani, Adrian Sampson, David Patterson, Rutwik Jain, Nidhi Parthasarathy, Shaan Shah</p>
-                    <a href="https://ieeexplore.ieee.org/document/10315012" class="pdf-link">Paper</a>
-                </div>
-                <div class="publication-item">
-                    <h4>Nov 2023 • <strong>Arxiv</strong></h4>
-                    <h3>Predicting Neural Stem Cell Differentiation Using Deep Learning Models </h3>
-                    <p>Nidhi Parthasarathy, Chandra Suda, Anika Mittal, Ian Young Chen, Ananya Jalihal</p>
-                    <a href="https://arxiv.org/abs/2312.06665" class="pdf-link">Paper</a>
-                </div>
-                <div class="publication-item">
-                    <h4>July 2024 • To Appear in <strong>NextGen Research Institute</strong></h4>
-                    <h3>Application of Convolutional Neural Networks (CNNs) Reduces Radiological Diagnostic Errors in Classifying Pulmonary Diseases Based on Chest X-rays</h3>
-                    <p>Radha Munver, Nidhi Parthasarathy, Sanya Badhe</p>
-                    <a href="https://drive.google.com/file/d/1pJdBxTELC6ePNloUzkzyWLEg8oAMFrue/view?usp=sharing" class="pdf-link">Paper</a>
-                </div>
+            <h2>CV / Resume</h2>
+            <div class="cv-actions">
+                <a href="resume.pdf" target="_blank" rel="noopener">Open / Download PDF</a>
             </div>
+            <iframe class="pdf-frame" src="resume.pdf" title="Nidhi Parthasarathy - CV (PDF)"></iframe>
         </div>
     </main>
     <footer>
@@ -185,3 +152,4 @@
     </footer>
 </body>
 </html>
+

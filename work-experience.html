@@ -73,15 +73,19 @@
 
         .timeline {
             position: relative;
-            width: 2px;
-            background-color: #0073e6;
-            margin: 20px 0 20px 150px; /* Adjusted margin to move timeline to the left */
+            box-sizing: border-box;
+            width: calc(100% - 150px);
+            max-width: 100%;
+            min-width: 0;
+            margin: 20px 0 20px 150px;
+            padding-left: 0;
+            border-left: 2px solid #0073e6;
         }
 
         .timeline-item {
             position: relative;
             padding: 20px 0;
-            margin-left: -10px;
+            margin-left: 0;
         }
 
         .timeline-item::before {
@@ -92,9 +96,9 @@
             background-color: #0073e6;
             border: 3px solid #fff;
             border-radius: 50%;
-            left: -18px;
+            left: -8px;
             top: 50%;
-            transform: translateY(-50%);
+            transform: translate(-50%, -50%);
             z-index: 1;
         }
 
@@ -103,8 +107,10 @@
             padding: 20px;
             border-radius: 6px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            width: calc(100vw - 650px);
-            margin-left: 40px; /* Adjusted margin to align cards with the timeline */
+            width: 100%;
+            max-width: 100%;
+            box-sizing: border-box;
+            margin-left: 40px;
         }
 
         .timeline-content h3 {
@@ -126,23 +132,32 @@
             background-color: white;
             position: relative;
             border-radius: 6px;
-            width: calc(100vw - 650px);
+            width: 100%;
+            max-width: 100%;
+            box-sizing: border-box;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 900px) {
             .timeline {
-                width: 1px;
-                margin: 20px auto;
+                margin-left: 40px;
+                width: calc(100% - 40px);
             }
+        }
 
-            .timeline-content {
-                width: calc(100% - 20px);
-                margin: 10px auto;
+        @media screen and (max-width: 768px) {
+            .timeline {
+                margin-left: 0;
+                width: 100%;
+                border-left: none;
             }
 
             .timeline-item::before {
-                left: -6px;
+                display: none;
+            }
+
+            .timeline-content {
+                margin-left: 0;
             }
         }
 
@@ -167,11 +182,9 @@
                     <li><a href="work-experience.html">Work Experience</a></li>
                     <li><a href="publications.html">Publications</a></li>
                     <li><a href="talks.html">Talks</a></li>
-                    <li><a href="home.html#projects">Projects</a></li>
-                    <li><a href="home.html#dance">Dance</a></li>
-					<li><a href="home.html#volunteering">Volunteering</a></li>
-                    <li><a href="home.html#awards">Awards</a></li>
-                    <li><a href="home.html#cv">CV</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="awards.html">Awards</a></li>
+                    <li><a href="cv.html">CV</a></li>
                 </ul>
             </nav>
         </div>
